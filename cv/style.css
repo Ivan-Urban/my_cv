@@ -1,0 +1,77 @@
+@font-face {
+  font-family: League-Bold;
+  src: url('./assets/fonts/LeagueSpartan-Bold.ttf');
+}
+
+@font-face {
+  font-family: League-Light;
+  src: url('./assets/fonts/LeagueSpartan-Light.ttf')
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 900px;
+  height: 1362px;
+  margin: 0 auto;
+  padding: 46px 48px 53px 53px;
+  background-image: url('./assets/img/Form.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 1263px;
+  align-content: space-between;
+}
+
+#my_photo {
+  width: 344px;
+  height: 344px;
+}
+
+.img {
+  display: block;
+  width: 344px;
+  height: 344px;
+  border-radius: 35px;
+  padding: 7px;
+  background-color: #77D154;
+}
+
+#title {
+  color: #ffffff;
+  height: 190px;
+}
+
+.title {
+  width: 353px;
+  font-size: 70px;
+  font-family: League-Bold;
+  line-height: 65px;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  width: 356px;
+  font-size: 42px;
+  font-family: League-Light;
+  line-height: 39px;
+}
+
+.section {
+  width: 350px;
+  height: 350px;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+/* Коэфф: 0.3529 */ 
