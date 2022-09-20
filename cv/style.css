@@ -8,6 +8,15 @@
   src: url('./assets/fonts/LeagueSpartan-Light.ttf')
 }
 
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('./assets/fonts/Montserrat-Medium.ttf');
+}
+
+:root {
+  --green-color: #77D154;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,10 +24,10 @@
 }
 
 .main {
-  width: 900px;
-  height: 1362px;
+  width: 1400px;
+  height: 2120px;
   margin: 0 auto;
-  padding: 46px 48px 53px 53px;
+  padding: 70px 74px 64px 82px;
   background-image: url('./assets/img/Form.png');
   background-position: center;
   background-size: cover;
@@ -29,27 +38,22 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 1263px;
   align-content: space-between;
-}
-
-#my_photo {
-  width: 344px;
-  height: 344px;
 }
 
 .img {
   display: block;
-  width: 344px;
-  height: 344px;
-  border-radius: 35px;
-  padding: 7px;
-  background-color: #77D154;
+  width: 546px;
+  height: 546px;
+  border-radius: 55px;
+  padding: 11px;
+  background-color: var(--green-color);
 }
 
 #title {
   color: #ffffff;
   height: 190px;
+  margin-top: 24px;
 }
 
 .title {
@@ -68,10 +72,33 @@
 }
 
 .section {
-  width: 350px;
-  height: 350px;
-  background-color: #000;
-  margin-bottom: 30px;
+  width: 535px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decorate-line {
+  display: block;
+}
+
+.left-section-title {
+  font-family: League-Bold;
+  font-size: 82px;
+  line-height: 75px;
+}
+
+.about-me-info {
+  width: 485px;
+  color: #7C7D7F;
+  font-family: Montserrat-Medium;
+  font-size: 30px;
+  line-height: 36.75px;
 }
 
 /* Коэфф: 0.3529 */ 
