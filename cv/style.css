@@ -1,0 +1,301 @@
+@font-face {
+  font-family: League-Bold;
+  src: url('./assets/fonts/LeagueSpartan-Bold.ttf');
+}
+
+@font-face {
+  font-family: League-Light;
+  src: url('./assets/fonts/LeagueSpartan-Light.ttf')
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('./assets/fonts/Montserrat-Medium.ttf');
+}
+
+:root {
+  --green-color: #77D154;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  width: 1400px;
+  height: 2300px;
+  margin: 0 auto;
+  padding: 70px 74px 64px 82px;
+  background-image: url('./assets/img/Form.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info {
+  display: flex;
+  height: 2176px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 100px
+}
+
+.img {
+  display: block;
+  width: 546px;
+  height: 546px;
+  border-radius: 55px;
+  padding: 11px;
+  background-color: var(--green-color);
+}
+
+#title {
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.title {
+  width: 353px;
+  font-size: 110px;
+  font-family: League-Bold;
+  line-height: 101px;
+}
+
+.subtitle {
+  width: 495px;
+  font-size: 44px;
+  font-family: League-Light;
+  line-height: 39px;
+}
+
+.section {
+  width: 535px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decorate-line {
+  display: block;
+}
+
+.section-title {
+  font-family: League-Bold;
+  font-size: 82px;
+  line-height: 75px;
+}
+
+.left-title {
+  color: #242729;
+}
+
+.right-title {
+  color: #ffffff;
+}
+
+.about-me-info {
+  width: 485px;
+  color: #7C7D7F;
+  font-family: Montserrat-Medium;
+  font-size: 30px;
+  line-height: 36.75px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-item::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 30px;
+  background-color: #000000;
+  border-radius: 50%
+}
+
+.item-text {
+  font-family: Montserrat-Medium;
+  color: #7C7D7F;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.item-bar {
+  margin-left: auto;
+  width: 275px;
+  height: 27px;
+  background-color: #DCDCDD;
+  border-radius: 0px 55px 55px 0px;
+}
+
+.active-item-bar {
+  height: inherit;
+  background-color: var(--green-color);
+  border-radius: 0px 55px 55px 0px;
+}
+
+.java-script-bar {
+  width: 85%;
+}
+
+.type-script-bar {
+  width: 60%;
+}
+
+.nodejs-bar {
+  width: 15%;
+}
+
+.html-bar {
+  width: 95%;
+}
+
+.css-bar {
+  width: 85%;
+}
+
+.git-bar {
+  width: 35%;
+}
+
+.webpack-bar {
+  width: 40%;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 30px;
+}
+
+.phone-icon {
+  background-image: url('./assets/img/phone-call.png')
+}
+
+.email-icon {
+  background-image: url('./assets/img/email.png')
+}
+
+.location-icon {
+  background-image: url('./assets/img/location.png')
+}
+
+.phone,
+.email,
+.location {
+  text-decoration: none;
+  font-family: Montserrat-Medium;
+  color: #7C7D7F;
+  font-size: 25px;
+  line-height: 37px;
+  transition: .5s;
+}
+
+.location {
+  display: block;
+  width: 270px;
+}
+
+.phone:hover,
+.email:hover,
+.location:hover,
+.shool-link:hover,
+.projects-link:hover {
+  color: #575757;
+}
+
+.sec1 {
+  height: 300px;
+  background: #000;
+}
+
+.education-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+
+.years {
+  font-family: Montserrat-Medium;
+  color: var(--green-color);
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.place-of-study {
+  text-decoration: none;
+  width: 492px;
+  font-family: Montserrat-Medium;
+  color: #7C7D7F;
+  font-size: 30px;
+  line-height: 36.5px;
+  transition: .5s;
+}
+
+.projects-info {
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.projects-info-text,
+.projects-link {
+  font-family: Montserrat-Medium;
+  color: var(--green-color);
+  font-size: 30px;
+  line-height: 36.5px;
+}
+
+.projects-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+
+.projects-link {
+  width: 355px;
+  text-decoration: none;
+  color: #7C7D7F;
+  transition: .5s;
+}
+
+.soft-skill::before,
+.language::before {
+  background-color: #ffffff;
+}
+
+.green-form {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
