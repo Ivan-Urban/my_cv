@@ -26,7 +26,6 @@
 .main {
   position: relative;
   width: 1400px;
-  /* height: 2490px; */
   margin: 0 auto;
   padding: 70px 74px 64px 82px;
   background-image: url('./assets/img/Form.png');
@@ -60,14 +59,12 @@
 }
 
 .title {
-  width: 100%;
   font-size: 110px;
   font-family: League-Bold;
   line-height: 101px;
 }
 
 .subtitle {
-  width: 100%;
   font-size: 44px;
   font-family: League-Light;
   line-height: 39px;
@@ -242,7 +239,6 @@
 }
 
 .years {
-  /* width: 91.96%; */
   font-family: Montserrat-Medium;
   color: var(--green-color);
   font-size: 32px;
@@ -251,7 +247,6 @@
 
 .place-of-study {
   text-decoration: none;
-  /* width: 91.96%; */
   font-family: Montserrat-Medium;
   color: #7C7D7F;
   font-size: 30px;
@@ -281,7 +276,6 @@
 }
 
 .projects-link {
-  /* width: 355px; */
   text-decoration: none;
   color: #7C7D7F;
   transition: .5s;
@@ -303,20 +297,19 @@
   display: none;
 }
 
+.small-svg {
+  display: none;
+}
+
 @media (max-width: 1400px) {
-  /* .body {
-    width: 1400px;
-  } */
 
   .main {
     width: 100%;
-    padding: 5% 5.28% 64px 5.857%;
-    /* padding-left: 5.857%;
-    padding-right: 5.28%; */
+    padding: 5% 6% 64px 5.857%;
   }
 
   .info {
-    max-height: 2300px;
+    max-height: 2330px;
   }
 
   .img {
@@ -326,6 +319,7 @@
 
   .title {
     font-size: 7.86vw;
+    line-height: 7.21vw;
   }
 
   #title {
@@ -334,6 +328,7 @@
 
   .subtitle {
     font-size: 3.14vw;
+    line-height: 2.78vw;
   }
 
   .section-title {
@@ -341,14 +336,12 @@
     line-height: 5.357vw;
   }
 
-  /* .about-me-info, */
   .item-text {
     font-size: 2.5vw;
   }
 
   .about-me-info {
     font-size: 2vw;
-    /* line-height: 2.625vw; */
   }
 
   .big-line {
@@ -377,6 +370,7 @@
   .email,
   .location {
     font-size: 1.785vw;
+    line-height: 2.643vw;
   }
 
   .years {
@@ -400,5 +394,182 @@
   .green-form {
     width: 39.07vw;
     height: 14.14vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info {
+    max-height: 2190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    max-height: 1900px;
+  }
+}
+
+@media (max-width: 670px) {
+  .main {
+    background-image: none;
+    background-color: #242729;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .info {
+    max-height: 3900px;
+    gap: 0;
+  }
+
+  .left-section {
+    background-color: #ffffff;
+  }
+
+  .section {
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  #my_photo {
+    display: flex;
+    order: 0;
+    justify-content: center
+  }
+
+  #title {
+    order: 1;
+    align-items: center;
+  }
+
+  #about_me {
+    order: 2
+  }
+
+  #education {
+    order: 3
+  }
+
+  #tech-skills {
+    order: 4
+  }
+
+  #projects {
+    order: 5;
+  }
+
+  #soft-skills {
+    order: 5
+  }
+
+  #languages {
+    order: 6;
+  }
+
+  #contacts {
+    order: 7
+  }
+
+  .big-svg {
+    display: none;
+  }
+
+  .small-svg {
+    display: block;
+  }
+
+  .img {
+    width: 50vw;
+    height: 50vw;
+    padding: 1.64vw;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 10vw;
+    line-height: 8.5vw;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 5vw;
+    line-height: 4.5vw;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 8vw;
+    line-height: 7.5vw;
+  }
+
+  #soft-skills {
+    background: #ffffff;
+  }
+
+  #soft-skills > .section-title {
+    color: #242729
+  }
+
+  .soft-skill::before {
+    background-color: #000000;
+  }
+
+  .about-me-info {
+    font-size: 3.5vw;
+    line-height: 38px;
+  }
+
+  .years {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+
+  .place-of-study {
+    font-size: 4vw;
+    line-height: 38px;
+  }
+
+  .item-text {
+    font-size: 4vw;
+    line-height: 5.5vw;
+  }
+
+  .list-item::before {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .item-bar {
+    height: 3vw;
+  }
+
+  .projects-info-text,
+  .projects-link {
+    font-size: 4vw;
+  }
+
+  .contact-icon {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .phone,
+  .email,
+  .location {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+}
+
+@media (max-width: 586px) {
+  .about-me-info {
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ed-big-line {
+    display: none;
   }
 }
