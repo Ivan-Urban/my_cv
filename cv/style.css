@@ -26,7 +26,6 @@
 .main {
   position: relative;
   width: 1400px;
-  height: 2300px;
   margin: 0 auto;
   padding: 70px 74px 64px 82px;
   background-image: url('./assets/img/Form.png');
@@ -37,7 +36,7 @@
 
 .info {
   display: flex;
-  height: 2176px;
+  max-height: 2360px;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-between;
@@ -51,29 +50,28 @@
   border-radius: 55px;
   padding: 11px;
   background-color: var(--green-color);
+  object-fit: cover;
 }
 
 #title {
   color: #ffffff;
-  margin-top: 24px;
+  margin-top: 100px;
 }
 
 .title {
-  width: 353px;
   font-size: 110px;
   font-family: League-Bold;
   line-height: 101px;
 }
 
 .subtitle {
-  width: 495px;
   font-size: 44px;
   font-family: League-Light;
   line-height: 39px;
 }
 
 .section {
-  width: 535px;
+  width: 43%;
   display: flex;
   flex-direction: column;
   gap: 30px
@@ -103,7 +101,7 @@
 }
 
 .about-me-info {
-  width: 485px;
+  width: 90.66%;
   color: #7C7D7F;
   font-family: Montserrat-Medium;
   font-size: 30px;
@@ -127,7 +125,7 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 30px;
+  margin-right: 5.6%;
   background-color: #000000;
   border-radius: 50%
 }
@@ -141,7 +139,7 @@
 
 .item-bar {
   margin-left: auto;
-  width: 275px;
+  width: 51.4%;
   height: 27px;
   background-color: #DCDCDD;
   border-radius: 0px 55px 55px 0px;
@@ -193,6 +191,7 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 55%;
   margin-right: 30px;
 }
 
@@ -221,7 +220,7 @@
 
 .location {
   display: block;
-  width: 270px;
+  width: 50.47%;
 }
 
 .phone:hover,
@@ -232,12 +231,8 @@
   color: #575757;
 }
 
-.sec1 {
-  height: 300px;
-  background: #000;
-}
-
 .education-info {
+  width: 492px;
   display: flex;
   flex-direction: column;
   gap: 15px
@@ -252,7 +247,6 @@
 
 .place-of-study {
   text-decoration: none;
-  width: 492px;
   font-family: Montserrat-Medium;
   color: #7C7D7F;
   font-size: 30px;
@@ -282,7 +276,6 @@
 }
 
 .projects-link {
-  width: 355px;
   text-decoration: none;
   color: #7C7D7F;
   transition: .5s;
@@ -298,4 +291,285 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.small-line {
+  display: none;
+}
+
+.small-svg {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+
+  .main {
+    width: 100%;
+    padding: 5% 6% 64px 5.857%;
+  }
+
+  .info {
+    max-height: 2330px;
+  }
+
+  .img {
+    width: 39vw;
+    height: 39vw;
+  }
+
+  .title {
+    font-size: 7.86vw;
+    line-height: 7.21vw;
+  }
+
+  #title {
+    margin-top: 5vw;
+  }
+
+  .subtitle {
+    font-size: 3.14vw;
+    line-height: 2.78vw;
+  }
+
+  .section-title {
+    font-size: 5.86vw;
+    line-height: 5.357vw;
+  }
+
+  .item-text {
+    font-size: 2.5vw;
+  }
+
+  .about-me-info {
+    font-size: 2vw;
+  }
+
+  .big-line {
+    display: none;
+  }
+
+  .small-line {
+    display: block;
+  }
+
+  .list-item::before {
+    width: 1.14vw;
+    height: 1.14vw;
+  }
+
+  .item-bar {
+    height: 1.93vw;
+  }
+
+  .contact-icon {
+    width: 3.93vw;
+    height: 3.93vw;
+  }
+
+  .phone,
+  .email,
+  .location {
+    font-size: 1.785vw;
+    line-height: 2.643vw;
+  }
+
+  .years {
+    font-size: 2.28vw;
+  }
+
+  .place-of-study {
+    font-size: 2.14vw;
+  }
+
+  .education-info,
+  .projects-info {
+    width: 90%;
+  }
+
+  .projects-info-text,
+  .projects-link {
+    font-size: 2.14vw;
+  }
+
+  .green-form {
+    width: 39.07vw;
+    height: 14.14vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info {
+    max-height: 2190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    max-height: 1900px;
+  }
+}
+
+@media (max-width: 670px) {
+  .main {
+    background-image: none;
+    background-color: #242729;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .info {
+    max-height: 3900px;
+    gap: 0;
+  }
+
+  .left-section {
+    background-color: #ffffff;
+  }
+
+  .section {
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  #my_photo {
+    display: flex;
+    order: 0;
+    justify-content: center
+  }
+
+  #title {
+    order: 1;
+    align-items: center;
+  }
+
+  #about_me {
+    order: 2
+  }
+
+  #education {
+    order: 3
+  }
+
+  #tech-skills {
+    order: 4
+  }
+
+  #projects {
+    order: 5;
+  }
+
+  #soft-skills {
+    order: 5
+  }
+
+  #languages {
+    order: 6;
+  }
+
+  #contacts {
+    order: 7
+  }
+
+  .big-svg {
+    display: none;
+  }
+
+  .small-svg {
+    display: block;
+  }
+
+  .img {
+    width: 50vw;
+    height: 50vw;
+    padding: 1.64vw;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 10vw;
+    line-height: 8.5vw;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 5vw;
+    line-height: 4.5vw;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 8vw;
+    line-height: 7.5vw;
+  }
+
+  #soft-skills {
+    background: #ffffff;
+  }
+
+  #soft-skills > .section-title {
+    color: #242729
+  }
+
+  .soft-skill::before {
+    background-color: #000000;
+  }
+
+  .about-me-info {
+    font-size: 3.5vw;
+    line-height: 38px;
+  }
+
+  .years {
+    font-size: 4vw;
+    line-height: 6vw;
+  }
+
+  .place-of-study {
+    font-size: 4vw;
+    line-height: 38px;
+  }
+
+  .item-text {
+    font-size: 4vw;
+    line-height: 5.5vw;
+  }
+
+  .list-item::before {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .item-bar {
+    height: 3vw;
+  }
+
+  .projects-info-text,
+  .projects-link {
+    font-size: 4vw;
+  }
+
+  .contact-icon {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .phone,
+  .email,
+  .location {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+}
+
+@media (max-width: 586px) {
+  .about-me-info {
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ed-big-line {
+    display: none;
+  }
 }
